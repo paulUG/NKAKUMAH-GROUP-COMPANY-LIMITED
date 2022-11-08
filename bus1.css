@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:century; 
+ }
+                /*home*/
+ .header{
+     min-height: 100vh;
+     height: 15%;
+     width: 1350px;
+     background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./bus1img/back1.jpg);
+     background-position: center;
+     background-size: cover;
+     position: relative;     
+ }
+ nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 1% 4%;
+ }
+ nav a{
+     color: #fff;
+     font-size: x-large;
+     text-decoration: none;
+     padding: 10px;
+ }
+ nav a span{
+     color: #009688;
+ }
+ .nav-links{
+     flex: 1;
+     text-align: right;
+ }
+ .nav-links ul li{
+     display: inline-block;
+     margin: 5px 20px;
+ 
+ }
+ .nav-links ul li a{
+     font-size: 14px;
+     text-decoration: none;
+     text-align: left;
+ }
+ .nav-links ul li a::after{
+     content: '';
+     display: block;
+     margin: auto;
+     height: 3px;
+     width: 0%;
+     background-color: rgb(88, 22, 22);
+     transition: .6s;
+ }
+ .nav-links ul li a:hover:after{
+     width: 100%;
+ }
+ .textbox{
+     width: 90%;
+     color: white;
+     position: absolute;
+     top: 40%;
+     left: 8%;
+     transition: translate(-50%,-50%);
+     text-align: center;
+ }
+ .textbox h1{
+     font-size: 45px;
+ }
+ .textbox p{
+     font-size: 15px;
+     margin-top: 17px;
+ }
+ .textbox a{
+     font-size: 22px;
+     text-decoration: none;
+     color: white;
+     display: inline-block;
+     width: 20%;
+     align-items: 10%;
+     padding: 40px, 60px;
+     border-radius: 25px solid #fff;
+     margin-top: 60px;
+     margin-bottom: 60px;
+     background: transparent;
+     transition: .6s;
+     cursor: pointer;
+     border-radius: 25px;
+     border:2px solid #009688; 
+ }
+ .textbox a:hover{
+    border:2px solid #009688 ;
+    background-color: #009688;
+     border: 1px solid #fff;
+ }
+ /*images*/
+ #portfolio{
+    display: flex;
+    flex-direction: column;
+   
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 20px;
+   background-color:rgba(4,9,30,0.7),rgba(4,9,30,0.7) ;
+   height:1000%;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 230px;
+    height: 240px;
+    margin: 10px;
+}
+/*contact*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color:  rgb(10, 100, 93);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding: 45px;
+    align-items: center;
+    height: 15%;  
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px, 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 300px;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 270PX;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 100px;
+    margin: 40px;
+    border-radius: 25px ;
+    outline: none;  
+}
+#send:hover{
+    width: 50%;
+    align-items: 10%;
+    border-radius: 25px solid #fff;
+    background: transparent;
+    transition: .6s;
+    cursor: pointer;
+    border-radius: 25px;
+    border:2px solid #009688;
+    color: red;
+    background-color:  2px solid #009688;   
+}
+/*sites*/
+#site{
+    display: flex;
+    flex-direction: column;
+   /* background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./images/sitesback.jpg);*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: rgb(57, 170, 199);
+    align-items: center;
+    padding: 20px;
+    height: 1100px;  
+}
+.site{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.site img{
+    width: 400px;
+    height: 240px;
+    margin: 5px;
+    padding: 10px;
+}
+/*about us*/
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+   /* background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/bus1img/aboutbackpic.jpg);*/
+    background-position: center;
+    background-size: cover;
+    position: relative;     
+    height: 900px;
+
+}
+#pic{
+    display: flex;
+    margin: 40px;
+}
+#pic h1{
+    color: #fff;
+}
+#pic img{
+    width: 20%;
+    height: 40%px;
+    padding: 20px;
+    
+
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+    color: black;
+    margin-top: 60PX;
+
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.87); 
+}
